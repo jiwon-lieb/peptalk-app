@@ -1,19 +1,23 @@
-// Base URL for the API
-const API_URL = 'https://peptalk-api.netlify.app/.netlify/functions/server';
+const getAdviceButton = document.getElementById('getAdvice');
+const adviceMessage = document.getElementById('advice-message');
+const mbtiSelect = document.getElementById('mbti');
+const moodSelect = document.getElementById('mood');
+const API_BASE = 'https://peptalk-api.netlify.app';
 
-document.getElementById('getAdviceButton').addEventListener('click', async () => {
-  // Get user inputs
-  const mbti = document.getElementById('mbti').value;
-  const mood = document.getElementById('mood').value;
+getAdviceButton.addEventListener('click', async () => {
+  const mbti = mbtiSelect.value;
+  const mood = moodSelect.value;
+  const apiUrl = `${API_BASE}/api/peptalk/${mbti}?mood=${mood}`;
 
   try {
-    // Call the API
-    const response = await fetch(`${API_URL}/${mbti}?mood=${mood}`);
+    const response = await fetch(apiUrl);
     const data = await response.json();
-
-    // Display advice
-    document.getElementById('advice').innerText = data.message;
+    if (data.message) {
+      adviceMessage.textContent = data.message;
+    } else {
+      adviceMessage.textContent = 'No advice found. Try again later.';
+    }
   } catch (error) {
-    document.getElementById('advice').innerText = 'Error fetching advice. Please try again later.';
+    adviceMessage.textContent = 'Something went wrong. Please try again later.';
   }
 });
