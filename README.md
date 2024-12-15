@@ -16,68 +16,74 @@ This app is a creative way to mix motivation with personality psychology, and it
 
 ## 📚 **How It Works**
 
-User Input: Users select their MBTI type (like INTJ, ENFP, etc.) and mood (default, sad, or angry) from a simple, stylish dropdown.
+- User Input: Users select their MBTI type (like INTJ, ENFP, etc.) and mood (default, sad, or angry) from a simple, stylish dropdown.
 
-API Call: The app sends a request to the MBTI Pep Talk API.
+- API Call: The app sends a request to the MBTI Pep Talk API.
 
-Response: The app displays a pep talk customized to the selected MBTI and mood.
+- Response: The app displays a pep talk customized to the selected MBTI and mood.
 
-🛠️ Features
+---
 
-Interactive Dropdowns: Choose your MBTI type and mood for a customized experience.
+## 🛠️ **Features**
 
-Personalized Pep Talks: Get motivating advice tailored to you.
+- Interactive Dropdowns: Choose your MBTI type and mood for a customized experience.
 
-Jiwon Aesthetic: Sleek, pastel colors and a baddie-inspired design.
+- Personalized Pep Talks: Get motivating advice tailored to you.
 
-Responsive Design: Works beautifully on desktop, tablet, and mobile devices.
+- Jiwon Aesthetic: Sleek, pastel colors and a baddie-inspired design.
 
-🌐 Live Demo
+- Responsive Design: Works beautifully on desktop, tablet, and mobile devices.
 
-You can check out the live version of the app here.
+---
 
-🛠️ Setup Instructions
+## 🛠️ **Setup Instructions**
 
-1️⃣ Prerequisites
+### 1️⃣ Prerequisites
 
-Node.js (v18+ recommended)
+- Node.js (v18+ recommended)
 
-npm (comes with Node.js)
+- npm (comes with Node.js)
 
-2️⃣ Clone the Repository
+### 2️⃣ Clone the Repository
 
+```bash
 git clone https://github.com/jiwon-lieb/mbti-pep-talk-app.git
 cd mbti-pep-talk-app
+```
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 
 If needed for any API utilities, install dependencies:
 
+```bash
 npm install
+```
 
-4️⃣ Run the App
+### 4️⃣ Run the App
 
 Since this is a frontend app, you can simply open index.html in your browser, or you can use a simple local server:
 
-npx http-server .
+```bash
+npx http-server
+```
 
 Visit http://localhost:8080/ in your browser.
 
-🔧 Tech Stack
+## 🔧 **Tech Stack**
 
-HTML/CSS/JavaScript: Frontend technologies used to build the app.
+- HTML/CSS/JavaScript: Frontend technologies used to build the app.
 
-MBTI Pep Talk API: Custom-built API used to fetch personalized pep talks for MBTI types.
+- MBTI Pep Talk API: Custom-built API used to fetch personalized pep talks for MBTI types.
 
-Netlify: Deployed as a serverless app on Netlify.
+- Netlify: Deployed as a serverless app on Netlify.
 
-🧪 How to Test the App
+## 🧪 **How to Test the App**
 
-Open index.html in your browser.
+1. Open index.html in your browser.
 
-Choose an MBTI type and mood from the dropdowns.
+2. Choose an MBTI type and mood from the dropdowns.
 
-Click Get Advice and watch the pep talk appear on the screen.
+3. Click Get Advice and watch the pep talk appear on the screen.
 
 If you’d like to see what’s happening behind the scenes, open the browser console (F12 or right-click -> Inspect -> Console) and see the API call and response.
 
@@ -120,15 +126,15 @@ We welcome contributions from all baddies and non-baddies alike. If you'd like t
 4. Push to the branch: `git push origin my-feature`
 5. Submit a pull request.
 
-🐛 Bugs & Issues
+## 🐛 **Bugs & Issues**
 
 If you encounter any issues, please submit them on the GitHub Issues page. We’ll take a look and get back to you.
 
-📜 License
+## 📜 **License**
 
 This project is licensed under the MIT License, which means you can use, modify, and distribute it freely as long as you include the original copyright.
 
-💌 Contact
+## 💌 **Contact**
 
 Have questions or feedback? Feel free to reach out via [email](mailto:contact@jiwonkwak.co).
 
