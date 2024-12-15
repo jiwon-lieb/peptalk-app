@@ -1,8 +1,10 @@
-🌟 MBTI Pep Talk App 🌟
+# 🌟 **MBTI Pep Talk App** 🌟
 
 Welcome to the MBTI Pep Talk App, a fun and interactive web app that delivers personalized pep talks based on MBTI types and user-selected moods. This app combines the power of a serverless API and a sleek, chic user interface.
 
-🚀 About the Project
+---
+
+## 🚀 **About the Project**
 
 The MBTI Pep Talk App allows users to select their MBTI type and mood to receive a personalized pep talk. The moods supported are default, sad, and angry. This app calls the custom-built MBTI Pep Talk API to fetch messages crafted just for your personality type and mood.
 
@@ -10,7 +12,9 @@ This project was created to demonstrate my skills as a Technical Writer and show
 
 This app is a creative way to mix motivation with personality psychology, and it’s only going to get better with more moods, advice, and customization in the future!
 
-📚 How It Works
+---
+
+## 📚 **How It Works**
 
 User Input: Users select their MBTI type (like INTJ, ENFP, etc.) and mood (default, sad, or angry) from a simple, stylish dropdown.
 
@@ -77,25 +81,28 @@ Click Get Advice and watch the pep talk appear on the screen.
 
 If you’d like to see what’s happening behind the scenes, open the browser console (F12 or right-click -> Inspect -> Console) and see the API call and response.
 
-🚀 Deployment Instructions
+## 🚀 **Deployment Instructions**
 
 Want to deploy it yourself? Here’s how you can do it with Netlify:
 
-Install Netlify CLI:
-
+1. **Install Netlify CLI**:
+```bash
 npm install -g netlify-cli
+```
 
-Login to Netlify:
-
+2. Login to Netlify:
+```bash
 netlify login
+```
 
-Deploy the App:
-
+3. Deploy the App:
+```bash
 netlify deploy --prod
+```
 
-Your app will be live at a URL like https://your-site-name.netlify.app/
+Your app will be live at a URL like `https://your-site-name.netlify.app/`
 
-🎉 Future Features
+## 🎉 **Future Features**
 
 More Moods: Add more emotions like anxious, excited, or relaxed.
 
@@ -103,25 +110,15 @@ Dynamic Themes: Let users change the design of the app (like dark mode or other 
 
 User-Generated Pep Talks: Allow users to submit their own advice to the database.
 
-❤️ Contributing
+## ❤️ **Contributing**
 
 We welcome contributions from all baddies and non-baddies alike. If you'd like to add your own flair, feel free to follow these steps:
 
-Fork the repository and clone it locally.
-
-Create a new branch for your changes:
-
-git checkout -b my-feature-branch
-
-Commit your changes:
-
-git commit -m 'Added feature XYZ'
-
-Push your branch:
-
-git push origin my-feature-branch
-
-Create a Pull Request (PR) on GitHub and describe your changes.
+1. Fork the repo and clone it locally.
+2. Create a new branch: `git checkout -b my-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-feature`
+5. Submit a pull request.
 
 🐛 Bugs & Issues
 
@@ -133,7 +130,7 @@ This project is licensed under the MIT License, which means you can use, modify,
 
 💌 Contact
 
-Have ideas for new features, pep talks, or design tweaks? Send a message via GitHub Issues or drop a line on social media.
+Have questions or feedback? Feel free to reach out via [email](mailto:contact@jiwonkwak.co).
 
 Enjoy your personalized pep talks and stay fabulous! ✨
 
