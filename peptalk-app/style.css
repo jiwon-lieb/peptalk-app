@@ -1,0 +1,130 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
+
+/* General Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #FDF6F0; /* Soft cream pastel background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Header Section */
+header {
+  background-color: #FFB6C1; /* Light pink pastel background */
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid #F78FB3; /* Baddie pink border */
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #1E1E1E; 
+  text-shadow: 2px 2px #F78FB3;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 400;
+}
+
+/* Main Section */
+main {
+  width: 90%;
+  max-width: 500px;
+  margin-top: 40px;
+}
+
+.selector h2 {
+  font-size: 2rem;
+  color: #2E2E2E;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  font-size: 1rem;
+  color: #333;
+  border-radius: 10px;
+  border: 2px solid #F78FB3;
+  background-color: #FFF;
+  font-family: 'Fira Code', monospace;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #FFB6C1;
+  border: none;
+  border-radius: 10px;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #F78FB3;
+}
+
+.result h2 {
+  font-size: 2rem;
+  color: #2E2E2E;
+  margin-top: 30px;
+}
+
+#advice-container {
+  background-color: #FFF;
+  border: 2px solid #F78FB3;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#advice-message {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #F78FB3;
+  color: #FFF;
+  font-size: 1rem;
+}
+
+footer p {
+  font-weight: 500;
+}
+
+footer a {
+  color: #FFF;
+  text-decoration: underline;
+}

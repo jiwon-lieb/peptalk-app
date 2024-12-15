@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌟 MBTI Pep Talk App 🌟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌟 MBTI Pep Talk App 🌟</h1>
+    <p>Your personalized pep talk generator for every MBTI type and mood!</p>
+  </header>
+
+  <main>
+    <section class="selector">
+      <h2>🔮 Get Your Pep Talk</h2>
+
+      <label for="mbti">Choose Your MBTI:</label>
+      <select id="mbti">
+        <option value="INTJ">INTJ</option>
+        <option value="ENTP">ENTP</option>
+        <option value="INFJ">INFJ</option>
+        <option value="ENTJ">ENTJ</option>
+        <option value="INFP">INFP</option>
+        <option value="ENFP">ENFP</option>
+        <option value="ISFP">ISFP</option>
+        <option value="ESFP">ESFP</option>
+        <option value="INTP">INTP</option>
+        <option value="ISFJ">ISFJ</option>
+        <option value="ESFJ">ESFJ</option>
+        <option value="ISTJ">ISTJ</option>
+        <option value="ESTJ">ESTJ</option>
+        <option value="ISTP">ISTP</option>
+        <option value="ESTP">ESTP</option>
+      </select>
+
+      <label for="mood">Choose Your Mood:</label>
+      <select id="mood">
+        <option value="default">Default</option>
+        <option value="sad">Sad</option>
+        <option value="angry">Angry</option>
+      </select>
+
+      <button id="getAdvice">💫 Get Pep Talk</button>
+    </section>
+
+    <section class="result">
+      <h2>🪞 Your Pep Talk</h2>
+      <div id="advice-container">
+        <p id="advice-message">Select your MBTI and mood to see your pep talk!</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Created with ❤️ by the ultimate baddie — Jiwon </p>
+    </footer>
+  </main>
+
+  <script>
+    const getAdviceButton = document.getElementById('getAdvice');
+    const adviceMessage = document.getElementById('advice-message');
+    const mbtiSelect = document.getElementById('mbti');
+    const moodSelect = document.getElementById('mood');
+
+    getAdviceButton.addEventListener('click', async () => {
+      const mbti = mbtiSelect.value;
+      const mood = moodSelect.value;
+      const apiUrl = `/api/peptalk/${mbti}?mood=${mood}`;
+      
+      try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        if (data.message) {
+          adviceMessage.textContent = data.message;
+        } else {
+          adviceMessage.textContent = 'No advice found. Try again later.';
+        }
+      } catch (error) {
+        adviceMessage.textContent = 'Something went wrong. Please try again later.';
+      }
+    });
+  </script>
+
+</body>
+</html>
