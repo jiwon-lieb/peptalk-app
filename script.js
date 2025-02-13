@@ -1,19 +1,20 @@
 const getAdviceButton = document.getElementById('getAdvice');
 const adviceMessage = document.getElementById('advice-message');
-const mbtiSelect = document.getElementById('mbti_type');
+const mbtiSelect = document.getElementById('mbti');
 const moodSelect = document.getElementById('mood');
 const API_BASE = 'https://api.peptalk.jiwonkwak.co';
 
 getAdviceButton.addEventListener('click', async () => {
   const mbti = mbtiSelect.value;
   const mood = moodSelect.value;
-  const apiUrl = `${API_BASE}/api/peptalk/${mbti_type}?mood=${mood}`;
+  const apiUrl = `${API_BASE}/api/peptalk/random/?mbti_type=${mbti}&mood=${mood}`;
 
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
-    if (data.message) {
-      adviceMessage.textContent = data.message;
+    console.log(data)
+    if (data.pep_eng) {
+      adviceMessage.textContent = data.pep_eng;
     } else {
       adviceMessage.textContent = 'No advice found. Try again later.';
     }
