@@ -16,7 +16,7 @@ This app is a creative way to mix motivation with personality psychology, and it
 
 ## 📚 **How It Works**
 
-- User Input: Users select their MBTI type (like INTJ, ENFP, etc.) and mood (default, sad, or angry) from a simple, stylish dropdown.
+- User Input: Users select their MBTI type (like INTJ, ENFP, etc.) and mood (sad, angry, or etc) from a simple, stylish dropdown.
 
 - API Call: The app sends a request to the MBTI Pep Talk API.
 
