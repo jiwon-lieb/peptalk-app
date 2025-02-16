@@ -47,8 +47,8 @@ This app is a creative way to mix motivation with personality psychology, and it
 ### 2️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/jiwon-lieb/mbti-pep-talk-app.git
-cd mbti-pep-talk-app
+git clone https://github.com/jiwon-lieb/peptalk-app.git
+cd peptalk-app
 ```
 
 ### 3️⃣ Install Dependencies
@@ -73,9 +73,9 @@ Visit http://localhost:8080/ in your browser.
 
 - HTML/CSS/JavaScript: Frontend technologies used to build the app.
 
-- MBTI Pep Talk API: Custom-built API used to fetch personalized pep talks for MBTI types.
+- MBTI Pep Talk API (Django Rest Framework): Custom-built API used to fetch personalized pep talks for MBTI types.
 
-- Netlify: Deployed as a serverless app on Netlify.
+- Netlify: Deployed as a static site on Netlify.
 
 ## 🧪 **How to Test the App**
 
@@ -107,14 +107,6 @@ netlify deploy --prod
 ```
 
 Your app will be live at a URL like `https://your-site-name.netlify.app/`
-
-## 🎉 **Future Features**
-
-More Moods: Add more emotions like anxious, excited, or relaxed.
-
-Dynamic Themes: Let users change the design of the app (like dark mode or other color schemes).
-
-User-Generated Pep Talks: Allow users to submit their own advice to the database.
 
 ## ❤️ **Contributing**
 
