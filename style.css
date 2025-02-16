@@ -128,3 +128,43 @@ footer a {
   color: #FFF;
   text-decoration: underline;
 }
+
+.language-toggle {
+  margin-top: 8px;
+  display: none; /* Hidden by default */
+  justify-content: center;
+  gap: 6px;
+}
+
+.language-toggle button {
+  padding: 5px 14px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px; /* Rounder for a premium, modern feel */
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔥 Active State - Slight Glow Effect */
+.language-toggle button.active {
+  background: linear-gradient(135deg, #ff69b4, #ff1493); /* Baddie pink gradient */
+  color: white;
+  transform: scale(1.08);
+  box-shadow: 0px 3px 8px rgba(255, 20, 147, 0.5);
+}
+
+/* 💅 Inactive State - Soft & Chic */
+.language-toggle button:not(.active) {
+  background: #ffebf1; /* Soft pink */
+  color: #b3005e; /* Deep magenta text */
+  border: 1px solid #ff69b4;
+}
+
+/* 💖 Hover Effect - Make it POP */
+.language-toggle button:hover {
+  background: linear-gradient(135deg, #ff1493, #ff69b4);
+  color: white;
+  transform: scale(1.05);
+}
